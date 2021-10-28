@@ -1,0 +1,150 @@
+.choices {
+  width: fit-content;
+  border-radius: 10px;
+}
+
+.choices__inner {
+  padding: 6px 6px 4px 0px;
+}
+
+.choices__inner,
+.choices__input .choices__input--cloned {
+  width: fit-content;
+  font-size: 18px;
+  background-color: transparent;
+}
+
+.is-open {
+  border-bottom: none;
+}
+
+.is-open .choices__list--single .choices__item {
+  color: #7943a4;
+}
+
+.choices__list--single .choices__item {
+  position: relative;
+  display: inline-block;
+  width: fit-content;
+}
+
+.choices__inner {
+  padding-left: 0;
+  border-radius: 10px;
+  border: none;
+}
+
+.choices__item {
+  padding-right: 5px;
+  color: #fff;
+}
+
+.choices__item:hover {
+  color: #9d5cd0;
+  transition: color 0.3s ease;
+}
+
+.choices__item:focus {
+  background-color: #7943a4;
+  outline: none;
+}
+
+.choices__item:active {
+  color: #7943A4;
+}
+
+
+.choices__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.choices__placeholder {
+  opacity: 1;
+}
+
+.choices__list--dropdown {
+  width: 300px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.choices__list {
+  width: 300px;
+}
+
+.choices__list--single {
+  padding: 6px 0px 4px 0px;
+  width: fit-content;
+}
+
+.choices__list--dropdown .choices__item--selectable {
+  padding-right: 0;
+}
+
+.is-focused .choices__inner,
+.is-open .choices__inner {
+  border-radius: 10px;
+}
+
+.choices.is-open {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.is-open .choices__list--dropdown {
+  top: 57px;
+  left: -2px;
+  padding-top: 38px;
+  width: 300px;
+  z-index: -1;
+  border: none;
+}
+
+.choices__list--dropdown .choices__item {
+  margin-left: 40px;
+  margin-right: 40px;
+  padding-left: 14px;
+  width: 220px;
+  font-size: 18px;
+  background-image: url("../img/tintoretto.jpg");
+}
+
+.choices__list--dropdown .choices__item:first-child {
+  margin-top: 2px;
+}
+
+.choices__list--dropdown .choices__item:hover {
+  color: #fff;
+  outline: 2px solid #9d5cd0;
+}
+
+.choices__list--dropdown .choices__item:active {
+  color: #fff;
+  background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)),url("../img/tintoretto.jpg");
+}
+
+.choices__list--dropdown .choices__item--selectable:last-child {
+  display: none;
+}
+
+.choices__list--single .choices__item:after {
+  content: "";
+  position: relative;
+  display: inline-block;
+  left: 3px;
+  height: 7px;
+  width: 12px;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 1L6 6L1 1' stroke='white'/%3E%3C/svg%3E%0A");
+  background-position: 0px;
+  background-repeat: no-repeat;
+  border: none;
+}
+
+.choices__list--single .choices__item:hover::after {
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 1L6 6L1 1' stroke='%239D5CD0'/%3E%3C/svg%3E%0A");
+  transition: background-image 0.3s ease;
+}
+
+.is-open .choices__list--single .choices__item:after,
+.choices__list--single .choices__item:active::after {
+  height: 10px;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='11' viewBox='0 0 12 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.999997 6L6 0.999995L11 6' stroke='%237943A4'/%3E%3C/svg%3E%0A");
+}

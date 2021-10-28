@@ -1,0 +1,20 @@
+.simplebar-track.simplebar-vertical {
+  right: 19px;
+  bottom: 20px;
+  width: 2px;
+  background-color: #000;
+}
+
+.simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 2px;
+  background-color: #fff;
+  opacity: 1;
+}
+
+.simplebar-scrollbar.simplebar-visible:before {
+  opacity: 1;
+}
