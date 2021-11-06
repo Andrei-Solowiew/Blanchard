@@ -1,5 +1,5 @@
-let search = document.querySelectorAll(".choices__list--dropdown .choices__list");
+// let search = document.querySelectorAll(".choices__list--dropdown .choices__list");
 
-search.forEach(function(entry){
-  entry.setAttribute("data-simplebar", "");
-});
+// search.forEach(function(entry){
+//   entry.setAttribute("data-simplebar", "");
+// });

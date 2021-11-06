@@ -16,35 +16,37 @@
 </head>
 
 <body>
-  <section class="header">
+  <header class="header">
     <div class="header__top">
       <div class="container header__container">
-        <picture>
-          <source srcset="img/logo_187.svg" media="(max-width:1024px)">
-          <img class="img header__img" src="img/logo.svg" alt="Логотип">
-        </picture>
+        <a class="a" href="">
+          <picture>
+            <source srcset="img/logo_187.svg" media="(max-width:1024px)">
+            <img class="img header__img" src="img/logo.svg" alt="Логотип">
+          </picture>
+        </a>
         <nav class="header__nav">
           <ul class="ul header__list">
             <li class="header__item">
-              <a class="a header__link" href="#" aria-label="О нас">О нас</a>
+              <a class="a header__link" href="#">О нас</a>
             </li>
             <li class="header__item">
-              <a class="a header__link" href="#" aria-label="Галерея">Галерея</a>
+              <a class="a header__link" href="#">Галерея</a>
             </li>
             <li class="header__item">
-              <a class="a header__link" href="#" aria-label="Каталог">Каталог</a>
+              <a class="a header__link" href="#">Каталог</a>
             </li>
             <li class="header__item">
-              <a class="a header__link" href="#" aria-label="События">События</a>
+              <a class="a header__link" href="#">События</a>
             </li>
             <li class="header__item">
-              <a class="a header__link" href="#" aria-label="Издания">Издания</a>
+              <a class="a header__link" href="#">Издания</a>
             </li>
             <li class="header__item">
-              <a class="a header__link" href="#" aria-label="Проекты">Проекты</a>
+              <a class="a header__link" href="#">Проекты</a>
             </li>
             <li class="header__item">
-              <a class="a header__link" href="#" aria-label="Контакты">Контакты</a>
+              <a class="a header__link" href="#">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -55,83 +57,152 @@
       <div class="container header__bottom__container">
         <ul class="ul header__bottom__list">
           <li class="header__bottom__item">
-            <select class="header__select" name="header__select_realism" aria-label="Реализм">
-                <option class="header__option header__option_none" value="">Реализм</option>
-                <option class="header__option" value="">Веккьетта</option>
-                <option class="header__option" value="">Андреа Верроккьо</option>
-                <option class="header__option" value="">Доменико Гирландайо</option>
-                <option class="header__option" value="">Беноццо Гоццоли</option>
-                <option class="header__option" value="">Граначчи, Франческо</option>
-                <option class="header__option" value="">Грегорио ди Чекко</option>
-                <option class="header__option" value="">Джованни да Удине</option>
-                <option class="header__option" value="">Джованни ди Паоло</option>
-                <option class="header__option" value="">Джорджоне</option>
-            </select>
+            <button class="btn header__bottom__button" data-path="one">
+              <span class="header__bottom__heading">Реализм</span>
+              <span class="header__bottom__icon"></span>
+            </button>
+            <div class="header__dropdown" data-target="one">
+              <div class="header__dropdown__wrap" data-simplebar>
+                <ul class="ul header__drop__list">
+                  <li class="header__dropdown__item">
+                    <a class="a header__bottom__link header__bottom__link_tintoretto" href="#">
+                      Тинторрето
+                    </a>
+                  </li>
+                  <li class="header__dropdown__item">
+                    <a class="a header__bottom__link header__bottom__link_fridrih" href="#">
+                      Фридрих
+                    </a>
+                  </li>
+                  <li class="header__dropdown__item">
+                    <a class="a header__bottom__link header__bottom__link_leo" href="#">
+                      Леонардо
+                    </a>
+                  </li>
+                  <li class="header__dropdown__item">
+                    <a class="a header__bottom__link header__bottom__link_tintoretto" href="#">
+                      Тинторрето
+                    </a>
+                  </li>
+                  <li class="header__dropdown__item">
+                    <a class="a header__bottom__link header__bottom__link_tintoretto" href="#">
+                      Тинторрето
+                    </a>
+                  </li>
+                  <li class="header__dropdown__item">
+                    <a class="a header__bottom__link header__bottom__link_tintoretto" href="#">
+                      Тинторрето
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </li>
           <li class="header__bottom__item">
-            <select class="header__select" name="header__select_impressionism" aria-label="Импрессионизм">
-                <option class="header__option header__option_none" value="">Импрессионизм</option>
-                <option class="header__option" value="">Веккьетта</option>
-                <option class="header__option" value="">Андреа Верроккьо</option>
-                <option class="header__option" value="">Доменико Гирландайо</option>
-                <option class="header__option" value="">Беноццо Гоццоли</option>
-                <option class="header__option" value="">Граначчи, Франческо</option>
-                <option class="header__option" value="">Грегорио ди Чекко</option>
-                <option class="header__option" value="">Джованни да Удине</option>
-                <option class="header__option" value="">Джованни ди Паоло</option>
-                <option class="header__option" value="">Джорджоне</option>
-            </select>
+            <button class="btn header__bottom__button" data-path="two">
+              <span class="header__bottom__heading">Импрессионизм</span>
+              <span class="header__bottom__icon"></span>
+            </button>
+            <div class="header__dropdown" data-target="two">
+              <div class="header__dropdown__wrap" data-simplebar>
+                <ul class="ul header__drop__list">
+                  <li class="header__dropdown__item">
+                    <a class="a header__bottom__link header__bottom__link_tintoretto" href="#">Тинторрето</a>
+                  </li>
+                  <li class="header__dropdown__item">
+                    <a class="a header__bottom__link header__bottom__link_fridrich" href="#">Фридрих</a>
+                  </li>
+                  <li class="header__dropdown__item">
+                    <a class="a header__bottom__link header__bottom__link_leo" href="#">Леонардо</a>
+                  </li>
+                  <li class="header__dropdown__item">
+                    <a class="a header__bottom__link header__bottom__link_tintoretto" href="#">Тинторрето</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </li>
           <li class="header__bottom__item">
-            <select class="header__select" name="header__select_post-impressionism" aria-label="Постимпрессионизм">
-                <option class="header__option header__option_none" value="">Постимпрессионизм</option>
-                <option class="header__option" value="">Веккьетта</option>
-                <option class="header__option" value="">Андреа Верроккьо</option>
-                <option class="header__option" value="">Доменико Гирландайо</option>
-                <option class="header__option" value="">Беноццо Гоццоли</option>
-                <option class="header__option" value="">Граначчи, Франческо</option>
-                <option class="header__option" value="">Грегорио ди Чекко</option>
-                <option class="header__option" value="">Джованни да Удине</option>
-                <option class="header__option" value="">Джованни ди Паоло</option>
-                <option class="header__option" value="">Джорджоне</option>
-            </select>
+            <button class="btn header__bottom__button" data-path="three">
+              <span class="header__bottom__heading">Постимпрессионизм</span>
+              <span class="header__bottom__icon"></span>
+            </button>
+            <div class="header__dropdown" data-target="three">
+              <div class="header__dropdown__wrap" data-simplebar>
+                <ul class="ul header__drop__list">
+                  <li class="header__dropdown__item">
+                    <a class="a header__bottom__link header__bottom__link_tintoretto" href="#">Тинторрето</a>
+                  </li>
+                  <li class="header__dropdown__item">
+                    <a class="a header__bottom__link header__bottom__link_fridrich" href="#">Фридрих</a>
+                  </li>
+                  <li class="header__dropdown__item">
+                    <a class="a header__bottom__link header__bottom__link_leo" href="#">Леонардо</a>
+                  </li>
+                  <li class="header__dropdown__item">
+                    <a class="a header__bottom__link header__bottom__link_tintoretto" href="#">Тинторрето</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </li>
           <li class="header__bottom__item">
-            <select class="header__select" name="header__select_avangard" aria-label="Авангард">
-                <option class="header__option header__option_none" value="">Авангард</option>
-                <option class="header__option" value="">Веккьетта</option>
-                <option class="header__option" value="">Андреа Верроккьо</option>
-                <option class="header__option" value="">Доменико Гирландайо</option>
-                <option class="header__option" value="">Беноццо Гоццоли</option>
-                <option class="header__option" value="">Граначчи, Франческо</option>
-                <option class="header__option" value="">Грегорио ди Чекко</option>
-                <option class="header__option" value="">Джованни да Удине</option>
-                <option class="header__option" value="">Джованни ди Паоло</option>
-                <option class="header__option" value="">Джорджоне</option>
-            </select>
+            <button class="btn header__bottom__button" data-path="four">
+              <span class="header__bottom__heading">Авангард</span>
+              <span class="header__bottom__icon"></span>
+            </button>
+            <div class="header__dropdown" data-target="four">
+              <div class="header__dropdown__wrap" data-simplebar>
+                <ul class="ul header__drop__list">
+                  <li class="header__dropdown__item">
+                    <a class="a header__bottom__link header__bottom__link_tintoretto" href="#">Тинторрето</a>
+                  </li>
+                  <li class="header__dropdown__item">
+                    <a class="a header__bottom__link header__bottom__link_fridrich" href="#">Фридрих</a>
+                  </li>
+                  <li class="header__dropdown__item">
+                    <a class="a header__bottom__link header__bottom__link_leo" href="#">Леонардо</a>
+                  </li>
+                  <li class="header__dropdown__item">
+                    <a class="a header__bottom__link header__bottom__link_tintoretto" href="#">Тинторрето</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </li>
           <li class="header__bottom__item">
-            <select class="header__select" name="header__select_futurism" aria-label="Футуризм">
-                <option class="header__option header__option_none" value="">Футуризм</option>
-                <option class="header__option" value="">Веккьетта</option>
-                <option class="header__option" value="">Андреа Верроккьо</option>
-                <option class="header__option" value="">Доменико Гирландайо</option>
-                <option class="header__option" value="">Беноццо Гоццоли</option>
-                <option class="header__option" value="">Граначчи, Франческо</option>
-                <option class="header__option" value="">Грегорио ди Чекко</option>
-                <option class="header__option" value="">Джованни да Удине</option>
-                <option class="header__option" value="">Джованни ди Паоло</option>
-                <option class="header__option" value="">Джорджоне</option>
-            </select>
+            <button class="btn header__bottom__button" data-path="five">
+              <span class="header__bottom__heading">Футуризм</span>
+              <span class="header__bottom__icon"></span>
+            </button>
+            <div class="header__dropdown" data-target="five">
+              <div class="header__dropdown__wrap" data-simplebar>
+                <ul class="ul header__drop__list">
+                  <li class="header__dropdown__item">
+                    <a class="a header__bottom__link header__bottom__link_tintoretto" href="#">Тинторрето</a>
+                  </li>
+                  <li class="header__dropdown__item">
+                    <a class="a header__bottom__link header__bottom__link_fridrich" href="#">Фридрих</a>
+                  </li>
+                  <li class="header__dropdown__item">
+                    <a class="a header__bottom__link header__bottom__link_leo" href="#">Леонардо</a>
+                  </li>
+                  <li class="header__dropdown__item">
+                    <a class="a header__bottom__link header__bottom__link_tintoretto" href="#">Тинторрето</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </li>
         </ul>
         <form class="header__form" action="#">
-          <input class="header__button" type="button" tabindex="-1" onclick="javascript: FindOnPage('text-to-find'); return false;" value="button" aria-label="Поиск"/>
+          <input class="header__button" type="button" onclick="javascript: FindOnPage('text-to-find'); return false;"
+            value="button" aria-label="Поиск" />
           <input class="input header__input" type="text" name="search" id="text-to-find" placeholder="Поиск по сайту">
         </form>
       </div>
     </div>
-  </section>
+  </header>
 
 
 

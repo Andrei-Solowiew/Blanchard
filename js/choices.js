@@ -1,55 +1,53 @@
-const header__select = () => {
-  const elements = document.querySelectorAll(".header__select");
-  elements.forEach((el) => {
-    const choices = new Choices(el, {
-      silent: false,
-      itemsitems: [],
-      choiceschoices: [],
-      renderChoiceLimit: -1,
-      maxItemCount: -1,
-      addItems: true,
-      addItemFilter: null,
-      removeItems: true,
-      removeItemButton: false,
-      editItems: false,
-      duplicateItemsAllowed: true,
-      delimiter: ",",
-      paste: true,
-      searchEnabled: false,
-      searchChoices: true,
-      searchFloor: 1,
-      searchResultLimit: 4,
-      searchFields: ["label", "value"],
-      position: "bottom",
-      resetScrollPosition: true,
-      shouldSort: true,
-      shouldSortItems: false,
-      placeholder: true,
-      placeholderValue: null,
-      searchPlaceholderValue: null,
-      prependValue: null,
-      appendValue: null,
-      renderSelectedChoices: "auto",
-      loadingText: "Loading...",
-      noResultsText: "No results found",
-      noChoicesText: "No choices to choose from",
-      itemSelectText: "",
-    });
-  });
+const params = {
+  btnClassName: "header__bottom__button",
+  activeClassName: "is__active",
+  disabledClassName: "is__disabled",
 };
 
-header__select();
+function onDisable(evt) {
+  if (evt.target.classList.contains(params.disabledClassName)) {
+    evt.target.classList.remove(
+      params.disabledClassName,
+      params.activeClassName
+    );
+    evt.target.removeEventListener("animationend", onDisable);
+  }
+}
 
-let choice = document.querySelectorAll(".choices");
+function setMenuListener() {
+  document.body.addEventListener("click", (evt) => {
+    const activeElements = document.querySelectorAll(
+      `.${params.activeClassName}`
+    );
 
-choice.forEach(function (entry) {
-  entry.setAttribute("tabindex", "-1");
-});
+    if (
+      activeElements.length &&
+      !evt.target.closest(`.${params.activeClassName}`)
+    ) {
+      activeElements.forEach((current) => {
+        if (current.classList.contains(params.btnClassName)) {
+          current.classList.remove(params.activeClassName);
+        } else {
+          current.classList.add(params.disabledClassName);
+        }
+      });
+    }
 
-let item = document.querySelectorAll(".choices__list--single .choices__item");
+    if (evt.target.closest(`.${params.btnClassName}`)) {
+      const btn = evt.target.closest(`.${params.btnClassName}`);
+      const path = btn.dataset.path;
+      const drop = document.querySelector(`[data-target="${path}"]`);
 
-item.forEach(function (entry) {
-  entry.setAttribute("tabindex", "0");
-});
+      btn.classList.toggle(params.activeClassName);
 
+      if (!drop.classList.contains(params.activeClassName)) {
+        drop.classList.add(params.activeClassName);
+        drop.addEventListener("animationend", onDisable);
+      } else {
+        drop.classList.add(params.disabledClassName);
+      }
+    }
+  });
+}
 
+setMenuListener();
