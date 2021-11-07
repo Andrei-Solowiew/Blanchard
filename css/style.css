@@ -16,6 +16,15 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "open-sans";
+  src: url("../fonts/open-sans-Bold.woff2") format("woff2"),
+    url("../fonts/open-sans-Bold.woff") format("woff");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
 
 html {
   box-sizing: border-box;
@@ -66,6 +75,7 @@ body {
   height: auto;
 }
 
+.h1,
 .h2,
 .h3,
 .p,

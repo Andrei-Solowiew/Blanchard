@@ -1,0 +1,48 @@
+.hero {
+  padding-top: 142px;
+  padding-bottom: 122px;
+  color: #fff;
+  background-color: #7b3f00; 
+  background-image: url("../img/hero__background.jpg");
+  animation-name: anim;
+  animation-duration: 2.4s;
+  animation-iteration-count: infinite;
+}
+
+.hero__h1 {
+  max-width: 570px;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 80px;
+}
+
+.hero__p {
+  margin-top: 20px;
+  max-width: 555px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 31px;
+}
+
+.hero__btn {
+  display: block;
+  margin-top: 90px;
+  padding: 24px 35px;
+  max-width: 315px;
+  background-color: #9d5cd0;
+  border-radius: 100px;
+}
+
+@keyframes anim {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

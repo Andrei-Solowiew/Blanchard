@@ -83,7 +83,8 @@
 }
 
 .header__bottom {
-  position: relative;
+  width: 100%;
+  position: absolute;
   padding: 19px 0;
   background-color: rgba(0, 0, 0, 0.4);
 }
