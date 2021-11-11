@@ -41,8 +41,8 @@
   transition: color 0.3s ease;
 }
 
-.header__link:focus, 
-.header__bottom__button:focus {
+.header__link:focus,
+.header__bottom-button:focus {
   background-color: #7943a4;
   outline: 5px solid #7943a4;
   outline-offset: -1px;
@@ -144,7 +144,7 @@
 }
 
 .header__input:focus {
-  border-color: #7943A4;
+  border-color: #7943a4;
   transition: border-color 0.3s ease, outline 0.3s ease;
 }
 
@@ -201,8 +201,13 @@
   background-color: rgba(0, 0, 0, 0.4);
 }
 
+.header__drop-list {
+  flex-direction: column;
+}
+
 .header__dropdown-wrap {
   width: 240px;
+  max-height: 240px;
 }
 
 .header__dropdown.is__active {
@@ -258,14 +263,18 @@
 }
 
 .header__bottom-link:hover {
-  outline: 2px solid #9D5CD0;
+  outline: 2px solid #9d5cd0;
 }
 
 .header__bottom-link:active {
-  outline: 2px solid #9D5CD0;
-  background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url("../img/tintoretto.jpg");
+  outline: 2px solid #9d5cd0;
+  background: linear-gradient(
+      0deg,
+      rgba(194, 131, 243, 0.4),
+      rgba(194, 131, 243, 0.4)
+    ),
+    url("../img/tintoretto.jpg");
 }
-
 
 .header__dropdown .simplebar-track.simplebar-vertical {
   right: -2px;
@@ -301,7 +310,6 @@
     opacity: 0;
   }
 }
-
 
 @media (max-width: 1410px) {
   .header__nav {

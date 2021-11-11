@@ -1,5 +1,5 @@
 const params = {
-  btnClassName: "header__bottom__button",
+  btnClassName: "header__bottom-button",
   activeClassName: "is__active",
   disabledClassName: "is__disabled",
 };
