@@ -2,11 +2,6 @@
   padding-top: 142px;
   padding-bottom: 122px;
   color: #fff;
-  background-color: #7b3f00; 
-  background-image: url("../img/hero__background.jpg");
-  animation-name: anim;
-  animation-duration: 2.4s;
-  animation-iteration-count: infinite;
 }
 
 .hero__h1 {
@@ -27,10 +22,26 @@
 .hero__btn {
   display: block;
   margin-top: 90px;
-  padding: 24px 35px;
+  padding: 26px 35px;
   max-width: 315px;
   background-color: #9d5cd0;
   border-radius: 100px;
+}
+
+.hero__background {
+  position: absolute;
+  top: 100px;
+  display: block;
+  width: 100%;
+  height: 110%;
+  z-index: -1;
+  background-color: #7b3f00; 
+  background-image: url("../img/hero__background.jpg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation-name: anim;
+  animation-duration: 5s;
+  animation-iteration-count: infinite; 
 }
 
 @keyframes anim {
@@ -39,7 +50,7 @@
   }
 
   50% {
-    transform: scale(1.05);
+    transform: scale(1.1);
   }
 
   100% {

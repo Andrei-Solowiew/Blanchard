@@ -207,7 +207,7 @@
 
 .header__dropdown-wrap {
   width: 240px;
-  max-height: 240px;
+  max-height: 255px;
 }
 
 .header__dropdown.is__active {
@@ -253,7 +253,7 @@
 
 .header__bottom-link {
   display: block;
-  padding: 9px 14px;
+  padding: 12px 14px;
   font-size: 14px;
   color: #fff;
   background-color: #000;
@@ -274,6 +274,266 @@
       rgba(194, 131, 243, 0.4)
     ),
     url("../img/tintoretto.jpg");
+}
+
+.header__bottom-link_fridrih {
+  background-image: url("../img/fridrich.jpg");
+}
+
+.header__bottom-link_fridrih:active {
+  background: linear-gradient(
+      0deg,
+      rgba(194, 131, 243, 0.4),
+      rgba(194, 131, 243, 0.4)
+    ),
+    url("../img/fridrich.jpg");
+}
+
+.header__bottom-link_leo {
+  background-image: url("../img/leo.jpg");
+}
+
+.header__bottom-link_leo:active {
+  background: linear-gradient(
+      0deg,
+      rgba(194, 131, 243, 0.4),
+      rgba(194, 131, 243, 0.4)
+    ),
+    url("../img/leo.jpg");
+}
+
+.header__bottom-link_verokko {
+  background-image: url("../img/leo.jpg");
+}
+
+.header__bottom-link_verokko:active {
+  background: linear-gradient(
+      0deg,
+      rgba(194, 131, 243, 0.4),
+      rgba(194, 131, 243, 0.4)
+    ),
+    url("../img/leo.jpg");
+}
+
+.header__bottom-link_verokko {
+  background-image: url("../img/verokko.jpg");
+}
+
+.header__bottom-link_verokko:active {
+  background: linear-gradient(
+      0deg,
+      rgba(194, 131, 243, 0.4),
+      rgba(194, 131, 243, 0.4)
+    ),
+    url("../img/verokko.jpg");
+}
+
+.header__bottom-link_mone {
+  background-image: url("../img/mone.jpg");
+}
+
+.header__bottom-link_mone:active {
+  background: linear-gradient(
+      0deg,
+      rgba(194, 131, 243, 0.4),
+      rgba(194, 131, 243, 0.4)
+    ),
+    url("../img/mone.jpg");
+}
+
+.header__bottom-link_sislei {
+  background-image: url("../img/sislei.jpg");
+}
+
+.header__bottom-link_sislei:active {
+  background: linear-gradient(
+      0deg,
+      rgba(194, 131, 243, 0.4),
+      rgba(194, 131, 243, 0.4)
+    ),
+    url("../img/sislei.jpg");
+}
+
+.header__bottom-link_mane {
+  background-image: url("../img/mane.jpg");
+}
+
+.header__bottom-link_mane:active {
+  background: linear-gradient(
+      0deg,
+      rgba(194, 131, 243, 0.4),
+      rgba(194, 131, 243, 0.4)
+    ),
+    url("../img/mane.jpg");
+}
+
+.header__bottom-link_renuar {
+  background-image: url("../img/renuar.jpg");
+}
+
+.header__bottom-link_renuar:active {
+  background: linear-gradient(
+      0deg,
+      rgba(194, 131, 243, 0.4),
+      rgba(194, 131, 243, 0.4)
+    ),
+    url("../img/renuar.jpg");
+}
+
+.header__bottom-link_van-gog {
+  background-image: url("../img/van-gog.jpg");
+}
+
+.header__bottom-link_van-gog:active {
+  background: linear-gradient(
+      0deg,
+      rgba(194, 131, 243, 0.4),
+      rgba(194, 131, 243, 0.4)
+    ),
+    url("../img/van-gog.jpg");
+}
+
+.header__bottom-link_sezann {
+  background-image: url("../img/sezann.jpg");
+}
+
+.header__bottom-link_sezann:active {
+  background: linear-gradient(
+      0deg,
+      rgba(194, 131, 243, 0.4),
+      rgba(194, 131, 243, 0.4)
+    ),
+    url("../img/sezann.jpg");
+}
+
+.header__bottom-link_gogen {
+  background-image: url("../img/gogen.jpg");
+}
+
+.header__bottom-link_gogen:active {
+  background: linear-gradient(
+      0deg,
+      rgba(194, 131, 243, 0.4),
+      rgba(194, 131, 243, 0.4)
+    ),
+    url("../img/gogen.jpg");
+}
+
+.header__bottom-link_sera {
+  background-image: url("../img/sera.jpg");
+}
+
+.header__bottom-link_sera:active {
+  background: linear-gradient(
+      0deg,
+      rgba(194, 131, 243, 0.4),
+      rgba(194, 131, 243, 0.4)
+    ),
+    url("../img/sera.jpg");
+}
+
+.header__bottom-link_kandinski {
+  background-image: url("../img/kandinski.jpg");
+}
+
+.header__bottom-link_kandinski:active {
+  background: linear-gradient(
+      0deg,
+      rgba(194, 131, 243, 0.4),
+      rgba(194, 131, 243, 0.4)
+    ),
+    url("../img/kandinski.jpg");
+}
+
+.header__bottom-link_marinetti {
+  background-image: url("../img/marinetti.jpg");
+}
+
+.header__bottom-link_marinetti:active {
+  background: linear-gradient(
+      0deg,
+      rgba(194, 131, 243, 0.4),
+      rgba(194, 131, 243, 0.4)
+    ),
+    url("../img/marinetti.jpg");
+}
+
+.header__bottom-link_malevich {
+  background-image: url("../img/malevich.jpg");
+}
+
+.header__bottom-link_malevich:active {
+  background: linear-gradient(
+      0deg,
+      rgba(194, 131, 243, 0.4),
+      rgba(194, 131, 243, 0.4)
+    ),
+    url("../img/malevich.jpg");
+}
+
+.header__bottom-link_pikasso {
+  background-image: url("../img/pikasso.jpg");
+}
+
+.header__bottom-link_pikasso:active {
+  background: linear-gradient(
+      0deg,
+      rgba(194, 131, 243, 0.4),
+      rgba(194, 131, 243, 0.4)
+    ),
+    url("../img/pikasso.jpg");
+}
+
+.header__bottom-link_karra {
+  background-image: url("../img/karra.jpg");
+}
+
+.header__bottom-link_karra:active {
+  background: linear-gradient(
+      0deg,
+      rgba(194, 131, 243, 0.4),
+      rgba(194, 131, 243, 0.4)
+    ),
+    url("../img/karra.jpg");
+}
+
+.header__bottom-link_pratella {
+  background-image: url("../img/pratella.jpg");
+}
+
+.header__bottom-link_pratella:active {
+  background: linear-gradient(
+      0deg,
+      rgba(194, 131, 243, 0.4),
+      rgba(194, 131, 243, 0.4)
+    ),
+    url("../img/pratella.jpg");
+}
+
+.header__bottom-link_severini {
+  background-image: url("../img/severini.jpg");
+}
+
+.header__bottom-link_severini:active {
+  background: linear-gradient(
+      0deg,
+      rgba(194, 131, 243, 0.4),
+      rgba(194, 131, 243, 0.4)
+    ),
+    url("../img/severini.jpg");
+}
+
+.header__bottom-link_balla {
+  background-image: url("../img/balla.jpg");
+}
+
+.header__bottom-link_balla:active {
+  background: linear-gradient(
+      0deg,
+      rgba(194, 131, 243, 0.4),
+      rgba(194, 131, 243, 0.4)
+    ),
+    url("../img/balla.jpg");
 }
 
 .header__dropdown .simplebar-track.simplebar-vertical {
