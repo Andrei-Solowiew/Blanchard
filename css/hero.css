@@ -38,6 +38,12 @@
   background-color: #7943a4;
 }
 
+.hero__btn:focus {
+  background-color: #7943a4;
+  outline: 2px solid #7943a4;
+  outline-offset: 5px;
+}
+
 .hero__background {
   position: absolute;
   top: 100px;
