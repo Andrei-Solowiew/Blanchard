@@ -28,6 +28,16 @@
   border-radius: 100px;
 }
 
+.hero__btn:hover {
+  padding: 23px 32px;
+  border: 3px solid #d1a9f0;
+  transition: border 0.3s ease, border 0.3s ease, background-color 0.3s ease;
+}
+
+.hero__btn:active {
+  background-color: #7943a4;
+}
+
 .hero__background {
   position: absolute;
   top: 100px;
