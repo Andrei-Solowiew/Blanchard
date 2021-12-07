@@ -71,9 +71,9 @@
   content: "";
   height: 0;
   width: 0;
-  /* border-style: solid;
+  border-style: solid;
   border-color: #333 transparent transparent;
-  border-width: 5px; */
+  border-width: 5px;
   position: absolute;
   right: 11.5px;
   top: 50%;
