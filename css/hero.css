@@ -1,6 +1,8 @@
 .hero {
+  position: relative;
   padding-top: 142px;
   padding-bottom: 122px;
+  overflow: hidden;
   color: #fff;
 }
 
@@ -46,7 +48,7 @@
 
 .hero__background {
   position: absolute;
-  top: 100px;
+  top: 0;
   display: block;
   width: 100%;
   height: 110%;
