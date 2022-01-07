@@ -1,5 +1,5 @@
 .gallery {
-  padding: 87px 0 69px 0;
+  padding: 87px 0 81px 0;
   color: #fff;
   background-color: #000;
   background-image: url("../img/gallery__background.jpg");
@@ -122,7 +122,7 @@
 }
 
 .gallery__right {
-  width: cals(1150 / 1600 * 100%);
+  width: calc(1150 / 1600 * 100%);
   margin-right: 0;
   margin-top: 15px;
 }
@@ -226,6 +226,7 @@
 .gallery__slide {
   position: relative;
   overflow: hidden;
+  height: 350px;
   background-color: #926b88;
 }
 
@@ -234,7 +235,7 @@
   position: relative;
   z-index: 1;
   display: block;
-  padding-top: 100%;
+  padding-top: 132%;
   border: 3px solid transparent;
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
@@ -251,7 +252,7 @@
   box-sizing: border-box;
   opacity: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  background-image: url("../img/magnifer.svg");
+  background-image: url("../img/magnifer.svg"); 
   background-repeat: no-repeat;
   background-size: 100px;
   background-position: center;
@@ -285,7 +286,13 @@
   object-fit: cover;
 }
 
-@media (max-width: 1700px) {
+.gallery__p {
+  position: relative;
+  top: 10px;
+  max-width: 385px;
+}
+
+/* @media (max-width: 1700px) {
   .gallery__right {
     width: 69%;
   }
@@ -301,7 +308,7 @@
   .gallery__right {
     width: 62%;
   }
-}
+} */
 
 @media (max-width: 1200px) {
   .gallery__right {

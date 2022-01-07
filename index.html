@@ -13,8 +13,11 @@
   <link rel="stylesheet" href="css/hero.css">
   <link rel="stylesheet" href="css/about-us.css">
   <link rel="stylesheet" href="css/choices.min.css">
-  <link rel="stylesheet" href="css/gallery.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/gallery.css">
+  <!-- <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
+  <link rel="stylesheet" href="css/accordion.css">
+  <link rel="stylesheet" href="css/catalog.css">
   <title>Blanchard - художественная галерея</title>
 </head>
 
@@ -267,7 +270,8 @@
           <div class="gallery__wrapper swiper-wrapper">
             <a class="gallery__slide swiper-slide" href="#">
               <picture>
-                <source srcset="https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg" media="(max-width: 320px)">
+                <source srcset="https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg"
+                  media="(max-width: 320px)">
                 <source srcset="https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg"
                   media="(max-width: 768px)">
                 <source srcset="https://cdn.pixabay.com/photo/2021/11/14/21/14/animals-6795732__340.jpg"
@@ -573,12 +577,1802 @@
                   media="(max-width: 1024px)">
 
                 <!-- Здесь картинка от 1361 до 1920 и выше -->
-                <img class="gallery__image" src="img/gallery__image_23.jpg" alt="">
+                <img class="gallery__image" src="img/gallery__image_24.jpg" alt="">
               </picture>
             </a>
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="catalog">
+    <div class="container">
+      <div class="catalog__top">
+        <h2 class="catalog__h2 h2">Каталог</h2>
+        <ul class="catalog__countries ul">
+          <li class="catalog__country" data-path="one">
+              <img class="catalog__img" src="img/france.png" alt="Франция" tabindex="0">
+          </li>
+          <li class="catalog__country" data-path="two">
+              <img class="catalog__img" src="img/germany.png" alt="Германия" tabindex="0">
+          </li>
+          <li class="catalog__country" data-path="three">
+              <img class="catalog__img" src="img/italy.png" alt="Италия" tabindex="0">
+          </li>
+          <li class="catalog__country" data-path="four">
+              <img class="catalog__img" src="img/russia.png" alt="Россия" tabindex="0">
+          </li>
+          <li class="catalog__country" data-path="five">
+              <img class="catalog__img" src="img/belgium.png" alt="Бельгия" tabindex="0">
+          </li>
+        </ul>
+      </div>
+      <div class="catalog__p p">
+        Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа
+        политической
+        культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей
+        картины,
+        стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые
+        жаждут
+        быть функционально разнесены на независимые элементы.
+      </div>
+
+      <div class="catalog__bottom_active catalog__bottom" data-target="one">
+
+        <div class="catalog__painter" data-target="one">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+
+        <div class="catalog__painter" data-target="two">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+
+        <div class="catalog__painter" data-target="three">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+
+        <div class="catalog__painter" data-target="four">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+
+        <div class="catalog__painter" data-target="five">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+
+        <div class="catalog__painter" data-target="six">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+
+        <div class="catalog__painter" data-target="seven">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+
+        <div class="catalog__painter" data-target="eight">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+
+        <div class="catalog__painter" data-target="nine">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+
+        <div class="catalog__painter" data-target="ten">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+
+        <div class="catalog__painter" data-target="eleven">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+
+        <div class="catalog__painter catalog__painter_active" data-target="twelve">
+          <img class="catalog__bottom-img" src="img/girlandaio.jpg" alt="художник">
+          <h3 class="catalog__h3 h3">Доменико Гирландайо</h3>
+          <span class="catalog__date">2 июня 1448 — 11 января 1494</span>
+          <p class="catalog__bottom-p p">
+            Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили
+            его брат
+            Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал
+            профессиональными
+            навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь
+            библейских
+            персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+        </div>
+
+        <div class="catalog__painter" data-target="thirteen">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+
+        <div class="catalog__painter" data-target="fourteen">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+
+        <div class="catalog__painter" data-target="fiveteen">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+
+        <div class="catalog__painter" data-target="sixteen">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+
+        <div class="catalog__painter" data-target="seventeen">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+
+        <div class="catalog__painter" data-target="eighteen">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+
+        <div class="catalog__painter" data-target="nineteen">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+
+        <div class="catalog__painter" data-target="twenty">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+
+        <div class="catalog__painter" data-target="twenty-one">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+
+        <div class="catalog__painter" data-target="twenty-two">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+
+        <div class="catalog__painter" data-target="twenty-three">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+
+        <div class="catalog__painter" data-target="twenty-four">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+
+        <ul class="catalog__accordion accordion ul">
+          <li class="catalog__accordion-item" tabindex="0">
+            <h3 class="catalog__accordion-h3 h3">C 1400 по 1499 гг.</h3>
+            <ul class="catalog__accordion-list ul">
+              <li class="catalog__accordion-painters">
+                <a class="catalog__accordion-name" data-path="one" tabindex="0">
+                  Бенедетто ди Биндо
+                </a>
+                <a class="catalog__accordion-name" data-path="two" tabindex="0">
+                  Бергоньоне, Амброджо
+                </a>
+                <a class="catalog__accordion-name" data-path="three" tabindex="0">
+                  Биссоло, Франческо
+                </a>
+                <a class="catalog__accordion-name" data-path="four" tabindex="0">
+                  Больтраффио, Джованни
+                </a>
+                <a class="catalog__accordion-name" data-path="five" tabindex="0">
+                  Бонсиньори, Франческо
+                </a>
+                <a class="catalog__accordion-name" data-path="six" tabindex="0">
+                  Боттичини, Рафаэлло
+                </a>
+                <a class="catalog__accordion-name" data-path="seven" tabindex="0">
+                  Брамантино
+                </a>
+                <a class="catalog__accordion-name" data-path="eight" tabindex="0">
+                  Бреа, Людовико
+                </a>
+                <a class="catalog__accordion-name" data-path="nine" tabindex="0">
+                  Бьяджо д’Антонио Туччи
+                </a>
+              </li>
+
+              <li class="catalog__accordion-painters">
+                <a class="catalog__accordion-name" data-path="ten" tabindex="0">
+                  Веккьетта
+                </a>
+                <a class="catalog__accordion-name" data-path="eleven" tabindex="0">
+                  Андреа Верроккьо
+                </a>
+                <a class="catalog__accordion-name" data-path="twelve" tabindex="0">
+                  Доменико Гирландайо
+                </a>
+                <a class="catalog__accordion-name" data-path="thirteen" tabindex="0">
+                  Беноццо Гоццоли
+                </a>
+                <a class="catalog__accordion-name" data-path="fourteen" tabindex="0">
+                  Граначчи, Франческо
+                </a>
+                <a class="catalog__accordion-name" data-path="fiveteen" tabindex="0">
+                  Грегорио ди Чекко
+                </a>
+                <a class="catalog__accordion-name" data-path="sixteen" tabindex="0">
+                  Джованни да Удине
+                </a>
+                <a class="catalog__accordion-name" data-path="seventeen" tabindex="0">
+                  Джованни ди Паоло
+                </a>
+                <a class="catalog__accordion-name" data-path="eighteen" tabindex="0">
+                  Джорджоне
+                </a>
+              </li>
+
+              <li class="catalog__accordion-painters">
+                <a class="catalog__accordion-name" data-path="nineteen" tabindex="0">
+                  Парентино, Бернардо
+                </a>
+                <a class="catalog__accordion-name" data-path="twenty" tabindex="0">
+                  Пезеллино
+                </a>
+                <a class="catalog__accordion-name" data-path="twenty-one" tabindex="0">
+                  Пьетро Перуджино
+                </a>
+                <a class="catalog__accordion-name" data-path="twenty-two" tabindex="0">
+                  Перуцци, Бальдассаре
+                </a>
+                <a class="catalog__accordion-name" data-path="twenty-three" tabindex="0">
+                  Пизанелло
+                </a>
+                <a class="catalog__accordion-name" data-path="twenty-four" tabindex="0">
+                  Пинтуриккьо
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="catalog__accordion-item" tabindex="0">
+            <h3 class="catalog__accordion-h3 h3">C 1500 по 1599 гг.</h3>
+            <div class="catalog__accordion-emptiness">
+              <div class="catalog__accordion-img"></div>
+              <div class="catalog__accordion-info">
+                <h3 class="catalog__accordion-h3 h3">Здесь пока пусто</h3>
+                <p class="catalog__accordion-p p">
+                  А в галерее вы всегда можете найти что-то интересное для себя
+                </p>
+                <a class="catalog__accordion-link_pink a" href="#">В галерею</a>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__accordion-item" tabindex="0">
+            <h3 class="catalog__accordion-h3 h3">C 1600 по 1699 гг.</h3>
+            <div class="catalog__accordion-emptiness">
+              <div class="catalog__accordion-img"></div>
+              <div class="catalog__accordion-info">
+                <h3 class="catalog__accordion-h3 h3">Здесь пока пусто</h3>
+                <p class="catalog__accordion-p p">
+                  А в галерее вы всегда можете найти что-то интересное для себя
+                </p>
+                <a class="catalog__accordion-link_pink a" href="#">В галерею</a>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__accordion-item" tabindex="0">
+            <h3 class="catalog__accordion-h3 h3">C 1700 по 1799 гг.</h3>
+            <div class="catalog__accordion-emptiness">
+              <div class="catalog__accordion-img"></div>
+              <div class="catalog__accordion-info">
+                <h3 class="catalog__accordion-h3 h3">Здесь пока пусто</h3>
+                <p class="catalog__accordion-p p">
+                  А в галерее вы всегда можете найти что-то интересное для себя
+                </p>
+                <a class="catalog__accordion-link_pink a" href="#">В галерею</a>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__accordion-item" tabindex="0">
+            <h3 class="catalog__accordion-h3 h3">C 1800 по 1899 гг.</h3>
+            <div class="catalog__accordion-emptiness">
+              <div class="catalog__accordion-img"></div>
+              <div class="catalog__accordion-info">
+                <h3 class="catalog__accordion-h3 h3">Здесь пока пусто</h3>
+                <p class="catalog__accordion-p p">
+                  А в галерее вы всегда можете найти что-то интересное для себя
+                </p>
+                <a class="catalog__accordion-link_pink a" href="#">В галерею</a>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__accordion-item" tabindex="0">
+            <h3 class="catalog__accordion-h3 h3">C 1900 по 1999 гг.</h3>
+            <div class="catalog__accordion-emptiness">
+              <div class="catalog__accordion-img"></div>
+              <div class="catalog__accordion-info">
+                <h3 class="catalog__accordion-h3 h3">Здесь пока пусто</h3>
+                <p class="catalog__accordion-p p">
+                  А в галерее вы всегда можете найти что-то интересное для себя
+                </p>
+                <a class="catalog__accordion-link_pink a" href="#">В галерею</a>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__accordion-item" tabindex="0">
+            <h3 class="catalog__accordion-h3 h3">C 2000 г.</h3>
+            <div class="catalog__accordion-emptiness">
+              <div class="catalog__accordion-img"></div>
+              <div class="catalog__accordion-info">
+                <h3 class="catalog__accordion-h3 h3">Здесь пока пусто</h3>
+                <p class="catalog__accordion-p p">
+                  А в галерее вы всегда можете найти что-то интересное для себя
+                </p>
+                <a class="catalog__accordion-link_pink a" href="#">В галерею</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="catalog__bottom" data-target="three">
+        <div class="catalog__painter" data-target="one">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+
+        <div class="catalog__painter" data-target="two">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+
+        <div class="catalog__painter" data-target="three">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+
+        <div class="catalog__painter" data-target="four">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+
+        <div class="catalog__painter" data-target="five">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+
+        <div class="catalog__painter" data-target="six">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+
+        <div class="catalog__painter" data-target="seven">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+
+        <div class="catalog__painter" data-target="eight">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+
+        <div class="catalog__painter" data-target="nine">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+
+        <div class="catalog__painter" data-target="ten">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+
+        <div class="catalog__painter" data-target="eleven">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+
+        <div class="catalog__painter catalog__painter_active" data-target="twelve">
+          <img class="catalog__bottom-img" src="img/girlandaio.jpg" alt="художник">
+          <h3 class="catalog__h3 h3">Доменико Гирландайо</h3>
+          <span class="catalog__date">2 июня 1448 — 11 января 1494</span>
+          <p class="catalog__bottom-p p">
+            Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили
+            его брат
+            Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал
+            профессиональными
+            навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь
+            библейских
+            персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+        </div>
+
+        <div class="catalog__painter" data-target="thirteen">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+
+        <div class="catalog__painter" data-target="fourteen">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+
+        <div class="catalog__painter" data-target="fiveteen">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+
+        <div class="catalog__painter" data-target="sixteen">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+
+        <div class="catalog__painter" data-target="seventeen">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+
+        <div class="catalog__painter" data-target="eighteen">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+
+        <div class="catalog__painter" data-target="nineteen">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+
+        <div class="catalog__painter" data-target="twenty">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+
+        <div class="catalog__painter" data-target="twenty-one">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+
+        <div class="catalog__painter" data-target="twenty-two">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+
+        <div class="catalog__painter" data-target="twenty-three">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+
+        <div class="catalog__painter" data-target="twenty-four">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+
+        <ul class="catalog__accordion accordion ul">
+          <li class="catalog__accordion-item" tabindex="0">
+            <h3 class="catalog__accordion-h3 h3">C 1400 по 1499 гг.</h3>
+            <ul class="catalog__accordion-list ul">
+              <li class="catalog__accordion-painters">
+                <span class="catalog__accordion-name" data-path="one">Бенедетто ди Биндо</span>
+                <span class="catalog__accordion-name" data-path="two">Бергоньоне, Амброджо</span>
+                <span class="catalog__accordion-name" data-path="three">Биссоло, Франческо</span>
+                <span class="catalog__accordion-name" data-path="four">Больтраффио, Джованни</span>
+                <span class="catalog__accordion-name" data-path="five">Бонсиньори, Франческо</span>
+                <span class="catalog__accordion-name" data-path="six">Боттичини, Рафаэлло</span>
+                <span class="catalog__accordion-name" data-path="seven">Брамантино</span>
+                <span class="catalog__accordion-name" data-path="eight">Бреа, Людовико</span>
+                <span class="catalog__accordion-name" data-path="nine">Бьяджо д’Антонио Туччи</span>
+              </li>
+
+              <li class="catalog__accordion-painters">
+                <a class="catalog__accordion-name" data-path="ten">Веккьетта</a>
+                <a class="catalog__accordion-name" data-path="eleven">Андреа Верроккьо</a>
+                <a class="catalog__accordion-name" data-path="twelve">Доменико Гирландайо</a>
+                <a class="catalog__accordion-name" data-path="thirteen">Беноццо Гоццоли</a>
+                <a class="catalog__accordion-name" data-path="fourteen">Граначчи, Франческо</a>
+                <a class="catalog__accordion-name" data-path="fiveteen">Грегорио ди Чекко</a>
+                <a class="catalog__accordion-name" data-path="sixteen">Джованни да Удине</a>
+                <a class="catalog__accordion-name" data-path="seventeen">Джованни ди Паоло</a>
+                <a class="catalog__accordion-name" data-path="eighteen">Джорджоне</a>
+              </li>
+
+              <li class="catalog__accordion-painters">
+                <a class="catalog__accordion-name" data-path="nineteen">Парентино, Бернардо</a>
+                <a class="catalog__accordion-name" data-path="twenty">Пезеллино</a>
+                <a class="catalog__accordion-name" data-path="twenty-one">Пьетро Перуджино</a>
+                <a class="catalog__accordion-name" data-path="twenty-two">Перуцци, Бальдассаре</a>
+                <a class="catalog__accordion-name" data-path="twenty-three">Пизанелло</a>
+                <a class="catalog__accordion-name" data-path="twenty-four">Пинтуриккьо</a>
+              </li>
+            </ul>
+          </li>
+          <li class="catalog__accordion-item" tabindex="0">
+            <h3 class="catalog__accordion-h3 h3">C 1500 по 1599 гг.</h3>
+            <div class="catalog__accordion-emptiness">
+              <div class="catalog__accordion-img"></div>
+              <div class="catalog__accordion-info">
+                <h3 class="catalog__accordion-h3 h3">Здесь пока пусто</h3>
+                <p class="catalog__accordion-p p">
+                  А в галерее вы всегда можете найти что-то интересное для себя
+                </p>
+                <a class="catalog__accordion-link_pink a" href="#">В галерею</a>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__accordion-item" tabindex="0">
+            <h3 class="catalog__accordion-h3 h3">C 1600 по 1699 гг.</h3>
+            <div class="catalog__accordion-emptiness">
+              <div class="catalog__accordion-img"></div>
+              <div class="catalog__accordion-info">
+                <h3 class="catalog__accordion-h3 h3">Здесь пока пусто</h3>
+                <p class="catalog__accordion-p p">
+                  А в галерее вы всегда можете найти что-то интересное для себя
+                </p>
+                <a class="catalog__accordion-link_pink a" href="#">В галерею</a>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__accordion-item" tabindex="0">
+            <h3 class="catalog__accordion-h3 h3">C 1700 по 1799 гг.</h3>
+            <div class="catalog__accordion-emptiness">
+              <div class="catalog__accordion-img"></div>
+              <div class="catalog__accordion-info">
+                <h3 class="catalog__accordion-h3 h3">Здесь пока пусто</h3>
+                <p class="catalog__accordion-p p">
+                  А в галерее вы всегда можете найти что-то интересное для себя
+                </p>
+                <a class="catalog__accordion-link_pink a" href="#">В галерею</a>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__accordion-item" tabindex="0">
+            <h3 class="catalog__accordion-h3 h3">C 1800 по 1899 гг.</h3>
+            <div class="catalog__accordion-emptiness">
+              <div class="catalog__accordion-img"></div>
+              <div class="catalog__accordion-info">
+                <h3 class="catalog__accordion-h3 h3">Здесь пока пусто</h3>
+                <p class="catalog__accordion-p p">
+                  А в галерее вы всегда можете найти что-то интересное для себя
+                </p>
+                <a class="catalog__accordion-link_pink a" href="#">В галерею</a>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__accordion-item" tabindex="0">
+            <h3 class="catalog__accordion-h3 h3">C 1900 по 1999 гг.</h3>
+            <div class="catalog__accordion-emptiness">
+              <div class="catalog__accordion-img"></div>
+              <div class="catalog__accordion-info">
+                <h3 class="catalog__accordion-h3 h3">Здесь пока пусто</h3>
+                <p class="catalog__accordion-p p">
+                  А в галерее вы всегда можете найти что-то интересное для себя
+                </p>
+                <a class="catalog__accordion-link_pink a" href="#">В галерею</a>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__accordion-item" tabindex="0">
+            <h3 class="catalog__accordion-h3 h3">C 2000 г.</h3>
+            <div class="catalog__accordion-emptiness">
+              <div class="catalog__accordion-img"></div>
+              <div class="catalog__accordion-info">
+                <h3 class="catalog__accordion-h3 h3">Здесь пока пусто</h3>
+                <p class="catalog__accordion-p p">
+                  А в галерее вы всегда можете найти что-то интересное для себя
+                </p>
+                <a class="catalog__accordion-link_pink a" href="#">В галерею</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="catalog__bottom" data-target="four">
+        <div class="catalog__painter" data-target="one">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="two">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="three">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="four">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="five">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="six">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="seven">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="eight">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="nine">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="ten">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="eleven">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter catalog__painter_active" data-target="twelve">
+          <img class="catalog__bottom-img" src="img/girlandaio.jpg" alt="художник">
+          <h3 class="catalog__h3 h3">Доменико Гирландайо</h3>
+          <span class="catalog__date">2 июня 1448 — 11 января 1494</span>
+          <p class="catalog__bottom-p p">
+            Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили
+            его брат
+            Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал
+            профессиональными
+            навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь
+            библейских
+            персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+        </div>
+      
+        <div class="catalog__painter" data-target="thirteen">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="fourteen">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="fiveteen">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="sixteen">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="seventeen">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="eighteen">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="nineteen">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="twenty">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="twenty-one">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="twenty-two">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="twenty-three">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="twenty-four">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <ul class="catalog__accordion accordion ul">
+          <li class="catalog__accordion-item" tabindex="0">
+            <h3 class="catalog__accordion-h3 h3">C 1400 по 1499 гг.</h3>
+            <ul class="catalog__accordion-list ul">
+              <li class="catalog__accordion-painters">
+                <span class="catalog__accordion-name" data-path="one">Бенедетто ди Биндо</span>
+                <span class="catalog__accordion-name" data-path="two">Бергоньоне, Амброджо</span>
+                <span class="catalog__accordion-name" data-path="three">Биссоло, Франческо</span>
+                <span class="catalog__accordion-name" data-path="four">Больтраффио, Джованни</span>
+                <span class="catalog__accordion-name" data-path="five">Бонсиньори, Франческо</span>
+                <span class="catalog__accordion-name" data-path="six">Боттичини, Рафаэлло</span>
+                <span class="catalog__accordion-name" data-path="seven">Брамантино</span>
+                <span class="catalog__accordion-name" data-path="eight">Бреа, Людовико</span>
+                <span class="catalog__accordion-name" data-path="nine">Бьяджо д’Антонио Туччи</span>
+              </li>
+      
+              <li class="catalog__accordion-painters">
+                <a class="catalog__accordion-name" data-path="ten">Веккьетта</a>
+                <a class="catalog__accordion-name" data-path="eleven">Андреа Верроккьо</a>
+                <a class="catalog__accordion-name" data-path="twelve">Доменико Гирландайо</a>
+                <a class="catalog__accordion-name" data-path="thirteen">Беноццо Гоццоли</a>
+                <a class="catalog__accordion-name" data-path="fourteen">Граначчи, Франческо</a>
+                <a class="catalog__accordion-name" data-path="fiveteen">Грегорио ди Чекко</a>
+                <a class="catalog__accordion-name" data-path="sixteen">Джованни да Удине</a>
+                <a class="catalog__accordion-name" data-path="seventeen">Джованни ди Паоло</a>
+                <a class="catalog__accordion-name" data-path="eighteen">Джорджоне</a>
+              </li>
+      
+              <li class="catalog__accordion-painters">
+                <a class="catalog__accordion-name" data-path="nineteen">Парентино, Бернардо</a>
+                <a class="catalog__accordion-name" data-path="twenty">Пезеллино</a>
+                <a class="catalog__accordion-name" data-path="twenty-one">Пьетро Перуджино</a>
+                <a class="catalog__accordion-name" data-path="twenty-two">Перуцци, Бальдассаре</a>
+                <a class="catalog__accordion-name" data-path="twenty-three">Пизанелло</a>
+                <a class="catalog__accordion-name" data-path="twenty-four">Пинтуриккьо</a>
+              </li>
+            </ul>
+          </li>
+          <li class="catalog__accordion-item" tabindex="0">
+            <h3 class="catalog__accordion-h3 h3">C 1500 по 1599 гг.</h3>
+            <div class="catalog__accordion-emptiness">
+              <div class="catalog__accordion-img"></div>
+              <div class="catalog__accordion-info">
+                <h3 class="catalog__accordion-h3 h3">Здесь пока пусто</h3>
+                <p class="catalog__accordion-p p">
+                  А в галерее вы всегда можете найти что-то интересное для себя
+                </p>
+                <a class="catalog__accordion-link_pink a" href="#">В галерею</a>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__accordion-item" tabindex="0">
+            <h3 class="catalog__accordion-h3 h3">C 1600 по 1699 гг.</h3>
+            <div class="catalog__accordion-emptiness">
+              <div class="catalog__accordion-img"></div>
+              <div class="catalog__accordion-info">
+                <h3 class="catalog__accordion-h3 h3">Здесь пока пусто</h3>
+                <p class="catalog__accordion-p p">
+                  А в галерее вы всегда можете найти что-то интересное для себя
+                </p>
+                <a class="catalog__accordion-link_pink a" href="#">В галерею</a>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__accordion-item" tabindex="0">
+            <h3 class="catalog__accordion-h3 h3">C 1700 по 1799 гг.</h3>
+            <div class="catalog__accordion-emptiness">
+              <div class="catalog__accordion-img"></div>
+              <div class="catalog__accordion-info">
+                <h3 class="catalog__accordion-h3 h3">Здесь пока пусто</h3>
+                <p class="catalog__accordion-p p">
+                  А в галерее вы всегда можете найти что-то интересное для себя
+                </p>
+                <a class="catalog__accordion-link_pink a" href="#">В галерею</a>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__accordion-item" tabindex="0">
+            <h3 class="catalog__accordion-h3 h3">C 1800 по 1899 гг.</h3>
+            <div class="catalog__accordion-emptiness">
+              <div class="catalog__accordion-img"></div>
+              <div class="catalog__accordion-info">
+                <h3 class="catalog__accordion-h3 h3">Здесь пока пусто</h3>
+                <p class="catalog__accordion-p p">
+                  А в галерее вы всегда можете найти что-то интересное для себя
+                </p>
+                <a class="catalog__accordion-link_pink a" href="#">В галерею</a>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__accordion-item" tabindex="0">
+            <h3 class="catalog__accordion-h3 h3">C 1900 по 1999 гг.</h3>
+            <div class="catalog__accordion-emptiness">
+              <div class="catalog__accordion-img"></div>
+              <div class="catalog__accordion-info">
+                <h3 class="catalog__accordion-h3 h3">Здесь пока пусто</h3>
+                <p class="catalog__accordion-p p">
+                  А в галерее вы всегда можете найти что-то интересное для себя
+                </p>
+                <a class="catalog__accordion-link_pink a" href="#">В галерею</a>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__accordion-item" tabindex="0">
+            <h3 class="catalog__accordion-h3 h3">C 2000 г.</h3>
+            <div class="catalog__accordion-emptiness">
+              <div class="catalog__accordion-img"></div>
+              <div class="catalog__accordion-info">
+                <h3 class="catalog__accordion-h3 h3">Здесь пока пусто</h3>
+                <p class="catalog__accordion-p p">
+                  А в галерее вы всегда можете найти что-то интересное для себя
+                </p>
+                <a class="catalog__accordion-link_pink a" href="#">В галерею</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="catalog__bottom" data-target="two">
+        <div class="catalog__painter" data-target="one">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="two">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="three">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="four">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="five">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="six">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="seven">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="eight">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="nine">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="ten">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="eleven">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter catalog__painter_active" data-target="twelve">
+          <img class="catalog__bottom-img" src="img/girlandaio.jpg" alt="художник">
+          <h3 class="catalog__h3 h3">Доменико Гирландайо</h3>
+          <span class="catalog__date">2 июня 1448 — 11 января 1494</span>
+          <p class="catalog__bottom-p p">
+            Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили
+            его брат
+            Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал
+            профессиональными
+            навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь
+            библейских
+            персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+        </div>
+      
+        <div class="catalog__painter" data-target="thirteen">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="fourteen">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="fiveteen">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="sixteen">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="seventeen">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="eighteen">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="nineteen">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="twenty">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="twenty-one">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="twenty-two">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="twenty-three">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="twenty-four">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <ul class="catalog__accordion accordion ul">
+          <li class="catalog__accordion-item" tabindex="0">
+            <h3 class="catalog__accordion-h3 h3">C 1400 по 1499 гг.</h3>
+            <ul class="catalog__accordion-list ul">
+              <li class="catalog__accordion-painters">
+                <span class="catalog__accordion-name" data-path="one">Бенедетто ди Биндо</span>
+                <span class="catalog__accordion-name" data-path="two">Бергоньоне, Амброджо</span>
+                <span class="catalog__accordion-name" data-path="three">Биссоло, Франческо</span>
+                <span class="catalog__accordion-name" data-path="four">Больтраффио, Джованни</span>
+                <span class="catalog__accordion-name" data-path="five">Бонсиньори, Франческо</span>
+                <span class="catalog__accordion-name" data-path="six">Боттичини, Рафаэлло</span>
+                <span class="catalog__accordion-name" data-path="seven">Брамантино</span>
+                <span class="catalog__accordion-name" data-path="eight">Бреа, Людовико</span>
+                <span class="catalog__accordion-name" data-path="nine">Бьяджо д’Антонио Туччи</span>
+              </li>
+      
+              <li class="catalog__accordion-painters">
+                <a class="catalog__accordion-name" data-path="ten">Веккьетта</a>
+                <a class="catalog__accordion-name" data-path="eleven">Андреа Верроккьо</a>
+                <a class="catalog__accordion-name" data-path="twelve">Доменико Гирландайо</a>
+                <a class="catalog__accordion-name" data-path="thirteen">Беноццо Гоццоли</a>
+                <a class="catalog__accordion-name" data-path="fourteen">Граначчи, Франческо</a>
+                <a class="catalog__accordion-name" data-path="fiveteen">Грегорио ди Чекко</a>
+                <a class="catalog__accordion-name" data-path="sixteen">Джованни да Удине</a>
+                <a class="catalog__accordion-name" data-path="seventeen">Джованни ди Паоло</a>
+                <a class="catalog__accordion-name" data-path="eighteen">Джорджоне</a>
+              </li>
+      
+              <li class="catalog__accordion-painters">
+                <a class="catalog__accordion-name" data-path="nineteen">Парентино, Бернардо</a>
+                <a class="catalog__accordion-name" data-path="twenty">Пезеллино</a>
+                <a class="catalog__accordion-name" data-path="twenty-one">Пьетро Перуджино</a>
+                <a class="catalog__accordion-name" data-path="twenty-two">Перуцци, Бальдассаре</a>
+                <a class="catalog__accordion-name" data-path="twenty-three">Пизанелло</a>
+                <a class="catalog__accordion-name" data-path="twenty-four">Пинтуриккьо</a>
+              </li>
+            </ul>
+          </li>
+          <li class="catalog__accordion-item" tabindex="0">
+            <h3 class="catalog__accordion-h3 h3">C 1500 по 1599 гг.</h3>
+            <div class="catalog__accordion-emptiness">
+              <div class="catalog__accordion-img"></div>
+              <div class="catalog__accordion-info">
+                <h3 class="catalog__accordion-h3 h3">Здесь пока пусто</h3>
+                <p class="catalog__accordion-p p">
+                  А в галерее вы всегда можете найти что-то интересное для себя
+                </p>
+                <a class="catalog__accordion-link_pink a" href="#">В галерею</a>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__accordion-item" tabindex="0">
+            <h3 class="catalog__accordion-h3 h3">C 1600 по 1699 гг.</h3>
+            <div class="catalog__accordion-emptiness">
+              <div class="catalog__accordion-img"></div>
+              <div class="catalog__accordion-info">
+                <h3 class="catalog__accordion-h3 h3">Здесь пока пусто</h3>
+                <p class="catalog__accordion-p p">
+                  А в галерее вы всегда можете найти что-то интересное для себя
+                </p>
+                <a class="catalog__accordion-link_pink a" href="#">В галерею</a>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__accordion-item" tabindex="0">
+            <h3 class="catalog__accordion-h3 h3">C 1700 по 1799 гг.</h3>
+            <div class="catalog__accordion-emptiness">
+              <div class="catalog__accordion-img"></div>
+              <div class="catalog__accordion-info">
+                <h3 class="catalog__accordion-h3 h3">Здесь пока пусто</h3>
+                <p class="catalog__accordion-p p">
+                  А в галерее вы всегда можете найти что-то интересное для себя
+                </p>
+                <a class="catalog__accordion-link_pink a" href="#">В галерею</a>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__accordion-item" tabindex="0">
+            <h3 class="catalog__accordion-h3 h3">C 1800 по 1899 гг.</h3>
+            <div class="catalog__accordion-emptiness">
+              <div class="catalog__accordion-img"></div>
+              <div class="catalog__accordion-info">
+                <h3 class="catalog__accordion-h3 h3">Здесь пока пусто</h3>
+                <p class="catalog__accordion-p p">
+                  А в галерее вы всегда можете найти что-то интересное для себя
+                </p>
+                <a class="catalog__accordion-link_pink a" href="#">В галерею</a>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__accordion-item" tabindex="0">
+            <h3 class="catalog__accordion-h3 h3">C 1900 по 1999 гг.</h3>
+            <div class="catalog__accordion-emptiness">
+              <div class="catalog__accordion-img"></div>
+              <div class="catalog__accordion-info">
+                <h3 class="catalog__accordion-h3 h3">Здесь пока пусто</h3>
+                <p class="catalog__accordion-p p">
+                  А в галерее вы всегда можете найти что-то интересное для себя
+                </p>
+                <a class="catalog__accordion-link_pink a" href="#">В галерею</a>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__accordion-item" tabindex="0">
+            <h3 class="catalog__accordion-h3 h3">C 2000 г.</h3>
+            <div class="catalog__accordion-emptiness">
+              <div class="catalog__accordion-img"></div>
+              <div class="catalog__accordion-info">
+                <h3 class="catalog__accordion-h3 h3">Здесь пока пусто</h3>
+                <p class="catalog__accordion-p p">
+                  А в галерее вы всегда можете найти что-то интересное для себя
+                </p>
+                <a class="catalog__accordion-link_pink a" href="#">В галерею</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class=" catalog__bottom" data-target="five">
+        <div class="catalog__painter" data-target="one">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="two">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="three">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="four">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="five">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="six">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="seven">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="eight">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="nine">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="ten">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="eleven">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter catalog__painter_active" data-target="twelve">
+          <img class="catalog__bottom-img" src="img/girlandaio.jpg" alt="художник">
+          <h3 class="catalog__h3 h3">Доменико Гирландайо</h3>
+          <span class="catalog__date">2 июня 1448 — 11 января 1494</span>
+          <p class="catalog__bottom-p p">
+            Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили
+            его брат
+            Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал
+            профессиональными
+            навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь
+            библейских
+            персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+        </div>
+      
+        <div class="catalog__painter" data-target="thirteen">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="fourteen">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="fiveteen">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="sixteen">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="seventeen">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="eighteen">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="nineteen">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="twenty">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="twenty-one">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="twenty-two">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="twenty-three">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <div class="catalog__painter" data-target="twenty-four">
+          <img class="catalog__bottom-img" src="img/painter.svg" alt="художник">
+          <h3 class="catalog__h3 h3">Что мы о нём знаем?</h3>
+          <p class="catalog__bottom-p p">
+            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+          </p>
+          <a class="catalog__painter-link a" href="#">В галерею</a>
+        </div>
+      
+        <ul class="catalog__accordion accordion ul">
+          <li class="catalog__accordion-item" tabindex="0">
+            <h3 class="catalog__accordion-h3 h3">C 1400 по 1499 гг.</h3>
+            <ul class="catalog__accordion-list ul">
+              <li class="catalog__accordion-painters">
+                <span class="catalog__accordion-name" data-path="one">Бенедетто ди Биндо</span>
+                <span class="catalog__accordion-name" data-path="two">Бергоньоне, Амброджо</span>
+                <span class="catalog__accordion-name" data-path="three">Биссоло, Франческо</span>
+                <span class="catalog__accordion-name" data-path="four">Больтраффио, Джованни</span>
+                <span class="catalog__accordion-name" data-path="five">Бонсиньори, Франческо</span>
+                <span class="catalog__accordion-name" data-path="six">Боттичини, Рафаэлло</span>
+                <span class="catalog__accordion-name" data-path="seven">Брамантино</span>
+                <span class="catalog__accordion-name" data-path="eight">Бреа, Людовико</span>
+                <span class="catalog__accordion-name" data-path="nine">Бьяджо д’Антонио Туччи</span>
+              </li>
+      
+              <li class="catalog__accordion-painters">
+                <a class="catalog__accordion-name" data-path="ten">Веккьетта</a>
+                <a class="catalog__accordion-name" data-path="eleven">Андреа Верроккьо</a>
+                <a class="catalog__accordion-name" data-path="twelve">Доменико Гирландайо</a>
+                <a class="catalog__accordion-name" data-path="thirteen">Беноццо Гоццоли</a>
+                <a class="catalog__accordion-name" data-path="fourteen">Граначчи, Франческо</a>
+                <a class="catalog__accordion-name" data-path="fiveteen">Грегорио ди Чекко</a>
+                <a class="catalog__accordion-name" data-path="sixteen">Джованни да Удине</a>
+                <a class="catalog__accordion-name" data-path="seventeen">Джованни ди Паоло</a>
+                <a class="catalog__accordion-name" data-path="eighteen">Джорджоне</a>
+              </li>
+      
+              <li class="catalog__accordion-painters">
+                <a class="catalog__accordion-name" data-path="nineteen">Парентино, Бернардо</a>
+                <a class="catalog__accordion-name" data-path="twenty">Пезеллино</a>
+                <a class="catalog__accordion-name" data-path="twenty-one">Пьетро Перуджино</a>
+                <a class="catalog__accordion-name" data-path="twenty-two">Перуцци, Бальдассаре</a>
+                <a class="catalog__accordion-name" data-path="twenty-three">Пизанелло</a>
+                <a class="catalog__accordion-name" data-path="twenty-four">Пинтуриккьо</a>
+              </li>
+            </ul>
+          </li>
+          <li class="catalog__accordion-item" tabindex="0">
+            <h3 class="catalog__accordion-h3 h3">C 1500 по 1599 гг.</h3>
+            <div class="catalog__accordion-emptiness">
+              <div class="catalog__accordion-img"></div>
+              <div class="catalog__accordion-info">
+                <h3 class="catalog__accordion-h3 h3">Здесь пока пусто</h3>
+                <p class="catalog__accordion-p p">
+                  А в галерее вы всегда можете найти что-то интересное для себя
+                </p>
+                <a class="catalog__accordion-link_pink a" href="#">В галерею</a>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__accordion-item" tabindex="0">
+            <h3 class="catalog__accordion-h3 h3">C 1600 по 1699 гг.</h3>
+            <div class="catalog__accordion-emptiness">
+              <div class="catalog__accordion-img"></div>
+              <div class="catalog__accordion-info">
+                <h3 class="catalog__accordion-h3 h3">Здесь пока пусто</h3>
+                <p class="catalog__accordion-p p">
+                  А в галерее вы всегда можете найти что-то интересное для себя
+                </p>
+                <a class="catalog__accordion-link_pink a" href="#">В галерею</a>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__accordion-item" tabindex="0">
+            <h3 class="catalog__accordion-h3 h3">C 1700 по 1799 гг.</h3>
+            <div class="catalog__accordion-emptiness">
+              <div class="catalog__accordion-img"></div>
+              <div class="catalog__accordion-info">
+                <h3 class="catalog__accordion-h3 h3">Здесь пока пусто</h3>
+                <p class="catalog__accordion-p p">
+                  А в галерее вы всегда можете найти что-то интересное для себя
+                </p>
+                <a class="catalog__accordion-link_pink a" href="#">В галерею</a>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__accordion-item" tabindex="0">
+            <h3 class="catalog__accordion-h3 h3">C 1800 по 1899 гг.</h3>
+            <div class="catalog__accordion-emptiness">
+              <div class="catalog__accordion-img"></div>
+              <div class="catalog__accordion-info">
+                <h3 class="catalog__accordion-h3 h3">Здесь пока пусто</h3>
+                <p class="catalog__accordion-p p">
+                  А в галерее вы всегда можете найти что-то интересное для себя
+                </p>
+                <a class="catalog__accordion-link_pink a" href="#">В галерею</a>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__accordion-item" tabindex="0">
+            <h3 class="catalog__accordion-h3 h3">C 1900 по 1999 гг.</h3>
+            <div class="catalog__accordion-emptiness">
+              <div class="catalog__accordion-img"></div>
+              <div class="catalog__accordion-info">
+                <h3 class="catalog__accordion-h3 h3">Здесь пока пусто</h3>
+                <p class="catalog__accordion-p p">
+                  А в галерее вы всегда можете найти что-то интересное для себя
+                </p>
+                <a class="catalog__accordion-link_pink a" href="#">В галерею</a>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__accordion-item" tabindex="0">
+            <h3 class="catalog__accordion-h3 h3">C 2000 г.</h3>
+            <div class="catalog__accordion-emptiness">
+              <div class="catalog__accordion-img"></div>
+              <div class="catalog__accordion-info">
+                <h3 class="catalog__accordion-h3 h3">Здесь пока пусто</h3>
+                <p class="catalog__accordion-p p">
+                  А в галерее вы всегда можете найти что-то интересное для себя
+                </p>
+                <a class="catalog__accordion-link_pink a" href="#">В галерею</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+
     </div>
   </section>
 
@@ -593,6 +2387,11 @@
   <script src="js/gallery__choices.js"></script>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="js/gallery__swiper.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="js/accordeon.js"></script>
+  <script src="js/countries.js"></script>
+  <script src="js/painters.js"></script>
 </body>
 
 </html>

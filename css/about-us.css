@@ -6,6 +6,10 @@
   margin-bottom: 30px;
 }
 
+.about-us__p {
+  font-size: 16px;
+}
+
 .about-us__h2, 
 .about-us__p {
  max-width: 1080px;

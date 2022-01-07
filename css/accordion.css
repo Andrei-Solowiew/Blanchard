@@ -1,0 +1,120 @@
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+  border: none;
+  background: none;
+  font-weight: bold;
+  /* font-family: "Montserrat", sans-serif; */
+  color: #333;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+  font-weight: bold;
+  /* font-family: "Montserrat", sans-serif; */
+  color: #333;
+}
+
+.ui-accordion .ui-accordion-header {
+  margin: 0;
+  padding: 45px 50px 45px 0px;
+  padding-right: 50px;
+  display: block;
+  cursor: pointer;
+  position: relative;
+  font-size: 24px;
+  /* border-top: 1px solid #cacaca; */
+}
+
+.ui-accordion-header-active,
+.ui-accordion-header-active:focus {
+  color: #7943a4;
+  /* border-top: 1px solid #7943a4;
+  border-bottom: 1px solid #7943a4; */
+  outline: 2px solid #7943a4;
+}
+
+.ui-accordion .ui-accordion-header:hover {
+  color: #9d5cd0;
+  -webkit-transition: color 0.5s ease 0s;
+    -o-transition: color 0.5s ease 0s;
+  transition: color 0.5s ease 0s;
+}
+
+.ui-accordion .ui-accordion-header:active {
+  color: #7943a4;
+}
+
+/* .ui-accordion .ui-accordion-header:focus {
+  outline: 2px solid #7943a4;
+  color: #7943a4;
+} */
+
+.ui-icon {
+  display: none;
+}
+
+.ui-accordion .ui-accordion-content {
+  height: auto;
+  padding: 0em 0em;
+  border: 0;
+}
+
+/* .ui-state-active .ui-icon,
+.ui-button:active .ui-icon {
+  background-image: url("http://code.jquery.com/ui/1.12.1/themes/base/images/ui-icons_444444_256x240.png");
+} */
+
+.ui-state-active .ui-icon,
+.ui-button .ui-icon {
+  display: none;
+}
+
+.ui-button:active .ui-icon-triangle-1-e {
+  transform: rotate(45deg);
+}
+
+@media (max-width: 1024px) {
+  .ui-accordion .ui-accordion-header {
+    padding: 39px 0;
+    padding-right: 45px;
+    font-size: 20px;
+  }
+
+  .ui-accordion .ui-accordion-content {
+    margin-top: 1em;
+  }
+}
+
+@media (max-width: 768px) {
+  .questions__item:not(:first-child) .ui-accordion-header {
+    padding: 30px 0;
+    padding-right: 95px;
+  }
+}
+
+@media (max-width: 540px) {
+  .questions__item:not(:first-child) .ui-accordion-header {
+    padding: 30px 0;
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 320px) {
+  .ui-accordion .ui-accordion-header {
+    padding: 30px 0;
+    font-size: 14px;
+  }
+
+  .ui-accordion .ui-accordion-content {
+    padding: 0em 0em;
+    margin-top: 1em;
+  }
+}
