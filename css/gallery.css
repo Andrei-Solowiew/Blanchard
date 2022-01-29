@@ -226,7 +226,7 @@
 .gallery__slide {
   position: relative;
   overflow: hidden;
-  height: 350px;
+  
   background-color: #926b88;
 }
 
@@ -235,7 +235,7 @@
   position: relative;
   z-index: 1;
   display: block;
-  padding-top: 132%;
+  padding-top: calc(100% - 6px);
   border: 3px solid transparent;
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }

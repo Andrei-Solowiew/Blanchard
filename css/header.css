@@ -193,6 +193,8 @@
 
 .header__bottom-button:active {
   color: #7943a4;
+  background-color: transparent;
+  outline: none;
 }
 
 .header__dropdown {

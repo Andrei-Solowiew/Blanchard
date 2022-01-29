@@ -30,29 +30,88 @@ a.ui-button:active,
   cursor: pointer;
   position: relative;
   font-size: 24px;
+  border-top: 1px solid #cacaca;
+  
   /* border-top: 1px solid #cacaca; */
 }
 
-.ui-accordion-header-active,
-.ui-accordion-header-active:focus {
+
+.ui-accordion .ui-accordion-header-active,
+.ui-accordion .ui-accordion-header-active:focus {
   color: #7943a4;
-  /* border-top: 1px solid #7943a4;
-  border-bottom: 1px solid #7943a4; */
-  outline: 2px solid #7943a4;
+  border-color: #7943a4;
+  border-top: 1px solid #7943a4;
+  border-bottom: 1px solid #7943a4;
+  /* outline: 2px solid #7943a4; */
 }
 
 .ui-accordion .ui-accordion-header:hover {
   color: #9d5cd0;
   -webkit-transition: color 0.5s ease 0s;
-    -o-transition: color 0.5s ease 0s;
-  transition: color 0.5s ease 0s;
+  -o-transition: color 0.5s ease 0s;
+  border-color: #9d5cd0;
+  transition: color 0.5s ease 0s, border-color 0.5s ease 0s;
 }
 
 .ui-accordion .ui-accordion-header:active {
   color: #7943a4;
+  border-color: #7943a4;
+}
+
+.ui-accordion .ui-accordion-header:focus-visible {
+  /* color: #7943a4; */
+  border-color: #7943a4;
+  outline: none;
+}
+
+.ui-accordion-header:focus-visible .catalog__accordion-a {
+  background-color: #7943a4;
+  color: #fff;
+}
+
+/* .ui-accordion {
+  border-color: #cacaca;
+} */
+
+.catalog__accordion-item:hover + .catalog__accordion-item .ui-accordion-header {
+  border-color: #9d5cd0;
+  transition: border-color 0.5s ease 0s;
+}
+
+.catalog__accordion-item:active + .catalog__accordion-item .ui-accordion-header {
+  border-color: #7943a4;
+}
+
+.catalog__accordion-item:hover + .catalog__accordion-item .ui-accordion-header:last-child {
+  border-color: #9d5cd0;
+}
+
+.catalog__accordion-item:active + .catalog__accordion-item .ui-accordion-header:last-child {
+  border-color: #7943a4;
 }
 
 /* .ui-accordion .ui-accordion-header:focus {
+  outline: 2px solid #7943a4;
+} */
+
+.catalog__accordion-item:last-child .ui-accordion-header {
+  border-bottom: 1px solid #cacaca;
+}
+
+.catalog__accordion-item:last-child:hover .ui-accordion-header {
+  border-color: #9d5cd0;
+}
+
+.catalog__accordion-item:last-child .ui-accordion-header:focus,
+.catalog__accordion-item:last-child .ui-accordion-header-active {
+  border-color: #9d5cd0;
+}
+
+.catalog__accordion-item:last-child:active .ui-accordion-header {
+  border-color: #7943a4;
+}
+
+/* .catalog__accordion-item:focus .ui-accordion-header {
   outline: 2px solid #7943a4;
   color: #7943a4;
 } */

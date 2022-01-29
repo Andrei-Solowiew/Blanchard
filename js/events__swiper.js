@@ -1,32 +1,33 @@
-let gallerySlider = new Swiper(".gallery__swiper", {
-  slidesPerView: 1,
+const swiper = new Swiper(".events__container", {
+  // Optional parameters
+  slidesPerView: 3,
   grid: {
     rows: 1,
     fill: "row",
   },
   spaceBetween: 20,
   pagination: {
-    el: ".gallery .gallery__pagination",
+    el: ".events__container .events-pagination",
     type: "fraction",
   },
   navigation: {
-    nextEl: ".gallery__next",
-    prevEl: ".gallery__prev",
+    nextEl: ".events-button-next",
+    prevEl: ".events-button-prev",
   },
 
   breakpoints: {
     441: {
       slidesPerView: 2,
       grid: {
-        rows: 2,
+        rows: 1,
       },
       spaceBetween: 30,
     },
 
-    1200: {
+    1024: {
       slidesPerView: 3,
       grid: {
-        rows: 2,
+        rows: 1,
       },
       spaceBetween: 50,
     },
@@ -59,13 +60,4 @@ let gallerySlider = new Swiper(".gallery__swiper", {
       });
     },
   },
-
-  // on: {
-  //   /* исправляет баг с margin-top остающимся при смене брейкпоинта, это было нужно в 6-й версии свайпера */
-  //   beforeResize: function () {
-  //     this.slides.forEach((el) => {
-  //       el.style.marginTop = "";
-  //     });
-  //   }
-  // }
 });
