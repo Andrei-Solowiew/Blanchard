@@ -286,11 +286,55 @@
   object-fit: cover;
 }
 
-.gallery__p {
-  position: relative;
-  top: 10px;
-  max-width: 385px;
+.gallery__list {
+  margin-bottom: 7px;
+  flex-direction: column;
 }
+
+.gallery__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.categories__checkbox {
+  display: none;
+}
+
+.categories__checkbox + label {
+  display: flex;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+}
+
+.categories__checkbox + label::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  margin-right: 10px;
+  border: 2px solid #fff;
+  border-radius: 0;
+}
+
+.categories__checkbox:checked + label, 
+.categories__checkbox + label:focus,
+.categories__checkbox + label:focus::before {
+  color: #c283f3;
+  outline: #c283f3;
+  border-color: #c283f3;
+}
+
+.categories__checkbox:checked + label::before {
+  content: "";
+  padding: 1px;
+  padding-left: 2px;
+  color: #c283f3;
+  border-color: #c283f3;
+  background-image: url("data:image/svg+xml,%3Csvg width='4' height='5' viewBox='0 0 4 5' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='2' cy='2.43433' r='2' fill='%23C283F3'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 
 /* @media (max-width: 1700px) {
   .gallery__right {

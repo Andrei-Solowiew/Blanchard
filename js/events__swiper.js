@@ -1,3 +1,4 @@
+
 const swiper = new Swiper(".events__container", {
   // Optional parameters
   slidesPerView: 3,
@@ -26,6 +27,7 @@ const swiper = new Swiper(".events__container", {
 
     1024: {
       slidesPerView: 3,
+      slidesPerGroup: 3,
       grid: {
         rows: 1,
       },
@@ -40,24 +42,26 @@ const swiper = new Swiper(".events__container", {
   watchSlidesProgress: true,
   slideVisibleClass: "slide-visible",
 
-  on: {
-    init: function () {
-      this.slides.forEach((slide) => {
-        if (!slide.classList.contains("slide-visible")) {
-          slide.tabIndex = "-1";
-        } else {
-          slide.tabIndex = "";
-        }
-      });
-    },
-    slideChange: function () {
-      this.slides.forEach((slide) => {
-        if (!slide.classList.contains("slide-visible")) {
-          slide.tabIndex = "-1";
-        } else {
-          slide.tabIndex = "";
-        }
-      });
-    },
-  },
+  // on: {
+  //   init: function () {
+  //     this.slides.forEach((slide) => {
+  //       if (!slide.classList.contains("slide-visible")) {
+  //         slide.tabIndex = "-1";
+  //       } else {
+  //         slide.tabIndex = "";
+  //       }
+  //     });
+  //   },
+  //   slideChange: function () {
+  //     this.slides.forEach((slide) => {
+  //       if (!slide.classList.contains("slide-visible")) {
+  //         slide.tabIndex = "-1";
+  //       } else {
+  //         slide.tabIndex = "";
+  //       }
+  //     });
+  //   },
+  // },
 });
+
+

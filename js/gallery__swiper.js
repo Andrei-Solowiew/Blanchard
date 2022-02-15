@@ -18,7 +18,7 @@ let gallerySlider = new Swiper(".gallery__swiper", {
     441: {
       slidesPerView: 2,
       grid: {
-        rows: 2,
+        rows: 1,
       },
       spaceBetween: 30,
     },
@@ -26,7 +26,7 @@ let gallerySlider = new Swiper(".gallery__swiper", {
     1200: {
       slidesPerView: 3,
       grid: {
-        rows: 2,
+        rows: 1,
       },
       spaceBetween: 50,
     },
@@ -69,3 +69,7 @@ let gallerySlider = new Swiper(".gallery__swiper", {
   //   }
   // }
 });
+
+
+document.querySelector(".gallery__item:focus").code === 'Enter'  
+  alert("Спасибо");

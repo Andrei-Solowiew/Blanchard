@@ -254,11 +254,20 @@
             <option class="gallery__option">Скульптура</option>
           </select>
         </div>
-        <p class="gallery__p p">
-          Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний
-          <a class="gallery__link a" tabindex="0">авторизуйтесь</a>, либо воспользуйтесь
-          лицензией.
-        </p>
+        <ul class="gallery__list ul">
+          <li class="gallery__item">
+            <input class="categories__checkbox" type="checkbox" id="data-1" name="data-1" value="XIX">
+            <label for="data-1" tabindex="0">XIX век</label>
+          </li>
+          <li class="gallery__item">
+            <input class="categories__checkbox" type="checkbox" id="data-2" name="data-2" value="XX">
+            <label for="data-2" tabindex="0">XX век</label>
+          </li>
+          <li class="gallery__item">
+            <input class="categories__checkbox" type="checkbox" id="data-3" name="data-3" value="Современность">
+            <label for="data-3" tabindex="0">Современность</label>
+          </li>             
+        </ul>
       </div>
       <div class="gallery__right">
         <div class="gallery__navigation swiper-navigation">
@@ -2383,78 +2392,82 @@
       <h2 class="events__h2 h2">События</h2>
       <ul class="events__list swiper-wrapper ul">
         <li class="events__item events__item_engraving swiper-slide" tabindex="-1">
-          <div class="events__location">
-            <span class="events__place">Музей им. Щусева</span>
-            <time class="events__time">с 20 марта по 30 апреля</time>
-          </div>
-          <div class="events__info">
+          <div class="events__content">
+            <div class="events__location">
+              <span class="events__place">Музей им. Щусева</span>
+              <span class="events__time">с 20 марта по 30 апреля</span>
+            </div>
             <h3 class="events__h3 h3">Книжная гравюра в живом восприятии</h3>
             <p class="events__p p">
               Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
               продолжили его брат
               Давид и сын Ридольфо.
             </p>
+            <a class="events__link a" href="#">Подробнее</a>
           </div>
-          <a class="events__link a" href="#">Подробнее</a>
         </li>
         <li class="events__item events__item_discussion swiper-slide" tabindex="-1">
-          <div class="events__location">
-            <span class="events__place">ММОМА</span>
-            <time class="events__time">24 марта 19:00</time>
+          <div class="events__content">
+            <div class="events__location">
+              <span class="events__place">ММОМА</span>
+              <span class="events__time">24 марта 19:00</span>
+            </div>
+              <h3 class="events__h3 h3">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
+              <p class="events__p p">
+                Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого
+                факта.
+              </p>
+            <a class="events__link a" href="#">Подробнее</a>
           </div>
-          <div class="events__info">
-            <h3 class="events__h3 h3">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
-            <p class="events__p p">
-              Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого
-              факта.
-            </p>
-          </div>
-          <a class="events__link a" href="#">Подробнее</a>
         </li>
         <li class="events__item events__item_formation swiper-slide" tabindex="-1">
-          <div class="events__location">
-            <span class="events__place">Еврейский музей</span>
-            <time class="events__time">с 31 марта по 21 апреля</time>
-          </div>
-          <div class="events__info">
-            <h3 class="events__h3 h3">Выставка «Формация 2020»</h3>
-            <p class="events__p p">
-              Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в
-              формировании
-              глубокомысленных рассуждений.
-            </p>
-          </div>
-          <a class="events__link a" href="#">Подробнее</a>
+          <div class="events__content">
+            <div class="events__location">
+              <span class="events__place">Еврейский музей</span>
+              <span class="events__time">с 31 марта по 21 апреля</span>
+            </div>
+              <h3 class="events__h3 h3">Выставка «Формация 2020»</h3>
+              <p class="events__p p">
+                Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в
+                формировании
+                глубокомысленных рассуждений.
+              </p>
+            <a class="events__link a" href="#">Подробнее</a>
+            </div>
         </li>
         <li class="events__item events__item_art swiper-slide" tabindex="-1">
-          <div class="events__location">
-            <span class="events__place">Третьяковка на Крымском валу</span>
-            <time class="events__time">с 30 марта по 30 апреля</time>
+          <div class="events__content">
+            <div class="events__location">
+              <span class="events__place">Третьяковка на Крымском валу</span>
+              <span class="events__time">с 30 марта по 30 апреля</span>
+            </div>
+              <h3 class="events__h3 h3">XXIV Международная биеннале молодого искусства</h3>
+              <p class="events__p p">
+                Внезапно, реплицированные с зарубежных источников, современные исследования.
+              </p>
+            <a class="events__link a" href="#" tabindex="-1">Подробнее</a>
           </div>
-          <div class="events__info">
-            <h3 class="events__h3 h3">XXIV Международная биеннале молодого искусства</h3>
-            <p class="events__p p">
-              Внезапно, реплицированные с зарубежных источников, современные исследования.
-            </p>
-          </div>
-          <a class="events__link a" href="#" tabindex="-1">Подробнее</a>
         </li>
         <li class="events__item events__item_silver swiper-slide" tabindex="-1">
-          <div class="events__location">
-            <span class="events__place">ММАМ</span>
-            <time class="events__time">с 8 апреля по 20 мая</time>
+          <div class="events__content">
+            <div class="events__location">
+              <span class="events__place">ММАМ</span>
+              <span class="events__time">с 8 апреля по 20 мая</span>
+            </div>
+              <h3 class="events__h3 h3">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
+              <p class="events__p p">
+                Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+                продолжили его брат
+                Давид и сын Ридольфо.
+              </p>
+            <a class="events__link a" href="#" tabindex="-1">Подробнее</a>
           </div>
-          <div class="events__info">
-            <h3 class="events__h3 h3">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
-            <p class="events__p p">
-              Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат
-              Давид и сын Ридольфо.
-            </p>
-          </div>
-          <a class="events__link a" href="#" tabindex="-1">Подробнее</a>
         </li>
       </ul>
-      <button class="events__btn btn">Все события</button> 
+      <button class="events__btn btn">Все события</button>
+
+      <div class="events-button-prev swiper-button-prev"></div>
+      <div class="events-button-next swiper-button-next"></div>
     </div>
   </section>
 
