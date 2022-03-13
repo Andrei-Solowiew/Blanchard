@@ -69,7 +69,3 @@ let gallerySlider = new Swiper(".gallery__swiper", {
   //   }
   // }
 });
-
-
-document.querySelector(".gallery__item:focus").code === 'Enter'  
-  alert("Спасибо");

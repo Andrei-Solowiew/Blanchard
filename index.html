@@ -18,6 +18,8 @@
   <link rel="stylesheet" href="css/accordion.css">
   <link rel="stylesheet" href="css/catalog.css">
   <link rel="stylesheet" href="css/events.css">
+  <link rel="stylesheet" href="css/project.css">
+  <link rel="stylesheet" href="css/showroom.css">
   <title>Blanchard - художественная галерея</title>
 </head>
 
@@ -202,7 +204,7 @@
           </li>
         </ul>
         <form class="header__form" action="#">
-          <input class="header__button" type="button" onclick="javascript: FindOnPage('text-to-find'); return false;"
+          <input class="header__button" type="button" onclick="javascript: FindOnPage('text-to-find');"
             value="button" aria-label="Поиск" />
           <input class="input header__input" type="text" name="search" id="text-to-find" placeholder="Поиск по сайту">
         </form>
@@ -256,15 +258,15 @@
         </div>
         <ul class="gallery__list ul">
           <li class="gallery__item">
-            <input class="categories__checkbox" type="checkbox" id="data-1" name="data-1" value="XIX">
+            <input class="gallery__checkbox" type="checkbox" id="data-1" name="data-1" value="XIX">
             <label for="data-1" tabindex="0">XIX век</label>
           </li>
           <li class="gallery__item">
-            <input class="categories__checkbox" type="checkbox" id="data-2" name="data-2" value="XX">
+            <input class="gallery__checkbox" type="checkbox" id="data-2" name="data-2" value="XX">
             <label for="data-2" tabindex="0">XX век</label>
           </li>
           <li class="gallery__item">
-            <input class="categories__checkbox" type="checkbox" id="data-3" name="data-3" value="Современность">
+            <input class="gallery__checkbox" type="checkbox" id="data-3" name="data-3" value="Современность">
             <label for="data-3" tabindex="0">Современность</label>
           </li>             
         </ul>
@@ -2464,10 +2466,73 @@
           </div>
         </li>
       </ul>
-      <button class="events__btn btn">Все события</button>
 
       <div class="events-button-prev swiper-button-prev"></div>
       <div class="events-button-next swiper-button-next"></div>
+    </div>
+  </section>
+
+  <section class="projects">
+    <div class="projects__container container">
+      <h2 class="projects__h2 h2">Проекты</h2>
+      <p class="projects__p p">
+        Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует
+        необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными
+        до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное
+        информационно-пропагандистское <a class="projects__tooltip a" href="#"></a> обеспечение нашей деятельности однозначно фиксирует необходимость экономической
+        целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены <a class="projects__tooltip a" href="#"></a>
+         исключительно в разрезе маркетинговых и финансовых <a class="projects__tooltip a" href="#"></a> предпосылок. Банальные, но неопровержимые выводы, а также
+        представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть
+        смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее: <a class="projects__link a" href="#">blanchard-art.ru/projects</a>
+      </p>
+      <h3 class="projects__h3 h3">Партнёры проектов:</h3>
+
+      <div class="projects__swiper swiper">
+        <!-- Additional required wrapper -->
+        <ul class="projects__list swiper-wrapper ul">
+          <!-- Slides -->
+          <li class="projects__item projects__item_one swiper-slide"></li>
+          <li class="projects__item projects__item_two swiper-slide"></li>
+          <li class="projects__item projects__item_three swiper-slide"></li>
+          <li class="projects__item projects__item_four swiper-slide"></li>
+          <li class="projects__item projects__item_five swiper-slide"></li>
+          <li class="projects__item projects__item_six swiper-slide"></li>
+          <li class="projects__item projects__item_seven swiper-slide"></li>
+          <li class="projects__item projects__item_eight swiper-slide"></li>
+          <li class="projects__item projects__item_nine swiper-slide"></li>
+        </ul>
+      </div>
+      <div class="projects-button-prev swiper-button-prev"></div>
+      <div class="projects-button-next swiper-button-next"></div>
+    </div>
+  </section>
+
+  <section class="showroom">
+    <div class="showroom__container container">
+      <div class="showroom__left">
+        <h3 class="showroom__left-h3 h3">Шоурум №4</h3>
+        <p class="showroom__address p">Леонтьевский переулок, дом 5/1</p>  
+      </div>
+      <div class="showroom__center">
+        <form class="showroom__form form" action="#">
+          <div class="showroom__form-group">
+            <input class="showroom__input input" type="text" name="name" placeholder="Имя*" data-validate-field="name" required>
+          </div>
+          <div class="showroom__form-group">
+            <input class="showroom__input input" type="tel" name="phone" placeholder="Телефон*" data-validate-field="tel"
+              data-validate-rules="phone" required>
+          </div>
+          
+          <button class="showroom__btn btn">Заказать обратный звонок</button>
+        </form>
+      </div>
+      <div class="showroom__right">
+        <h3 class="showroom__right-h3 h3">Связаться в один клик</h3>
+        <div class="showroom__socials">
+          <a class="showroom__social showroom__social_whatsapp a" href="#"></a>
+          <a class="showroom__social showroom__social_telegram a" href="#"></a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -2488,6 +2553,10 @@
   <script src="js/countries.js"></script>
   <script src="js/painters.js"></script>
   <script src="js/events__swiper.js"></script>
+  <script src="js/projects__swiper.js"></script>
+  <script src="js/inputmask.min.js"></script>
+  <script src="js/just-validate.min.js"></script>
+  <script src="js/form.js"></script>
 </body>
 
 </html>
